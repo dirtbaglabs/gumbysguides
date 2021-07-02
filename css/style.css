@@ -1,0 +1,142 @@
+
+  /* Grid base
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+ body {
+     margin: 0;
+ }
+ 
+  .container {
+      margin-top: 1em;
+      height: 100hv;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(8, 1fr);
+      gap: 10px;      
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+  } 
+
+  .container div {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* Grid divs
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#header {
+    grid-column-start: 1;
+    grid-column-end: span 4;
+    
+}
+
+#nav {
+    margin-top: 1.5em;
+    grid-column-start: 8;
+    grid-column-end: span 5;
+    text-align: right;
+}
+
+#splash {
+    margin-top: 20px;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+    grid-column-start: 1;
+    grid-column-end: span 13;
+    text-align: center;
+}
+
+#content {
+    grid-row-start: 4;
+    grid-row-end: span 3;
+    grid-column-start: 3;
+    grid-column-end: 11;
+}
+
+#footer {
+    grid-row-start: 7;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 11;
+    text-align: center;
+}
+  
+  
+  /* Base Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  body {
+      background-color: black;
+  }
+
+
+  /* Typography
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  body {
+      font-weight: 400;
+      font-family: "Josefin Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: white; 
+  }
+
+  #header{
+      font-size: 2em;
+      font-weight: 400;
+  }
+  h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
+  h1 {
+      font-size: 3em;
+      font-weight: 400;
+  }
+
+  #splash h2 {
+      font-size: 1.5em;
+      font-weight: 300;
+  }
+
+  #footer{
+      line-height: 1.5em;
+  }
+
+
+  
+
+  
+  /* Buttons
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .button {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 300;
+
+    display: inline-grid;
+    padding: 10px;
+    width: 9em;
+    border: 2px solid white;
+  }
+
+  
+  
+  /* Links
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  #nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px;
+  }
+
+  #nav a:hover {
+      text-decoration: underline;
+  }
+
+  #footer a:hover {
+      background-color: lightgrey;
+  }
+
+  
+  
+ 
+  
+  /* Lists
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+  
